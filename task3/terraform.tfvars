@@ -1,0 +1,10 @@
+vpc_cidr              = "10.0.0.0/16"
+public_subnets        = ["10.0.1.0/24"]
+private_subnets       = ["10.0.2.0/24"]
+bastion_instance_type = "t2.micro"
+private_instance_type = "t2.micro"
+private_instance_count = 2
+ami                   = "ami-0ecaad63ed3668fca"  
+key_name              = "r"
+bastion_policy_arns   = ["arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"]
+private_policy_arns   = ["arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"]
